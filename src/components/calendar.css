@@ -1,0 +1,220 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+. {
+    font-family: Roboto;
+}
+
+
+.date {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  line-height: 75px;
+  text-align: center;
+  vertical-align: center;
+  flex-grow: 1;
+}
+
+.day {
+  width: 75px;
+  height: 25px;
+  background-color: #00BFFF;
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 25px;
+  color: white;
+  flex-grow: 1;
+
+}
+
+#next-button {
+  background: url(../next.png) no-repeat;
+  background-size: 100%;
+  border: 0;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  margin-top: 22.5px;
+}
+
+#back-button {
+  background: url(../back.png) no-repeat;
+  background-size: 100%;
+  border: 0;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  margin-top: 22.5px;
+}
+
+.month-title {
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 22.5px;
+  color: white;
+  font-size: 32px;
+}
+
+.topbar {
+  width:675px;
+  height: 75px;
+  background-color: #00BFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  width: 675px;
+  display: grid;
+  grid-gap: 1px 1px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.drop {
+  background-color: #00BFFF;
+  width: 675px;
+  display: inline-grid;
+  height: 75px;
+
+}
+
+.legend {
+  width: 675px;
+  height: 75px;
+  display: flex;
+}
+
+.icon {
+  overflow: auto;
+  width: 50px;
+  height: 50px;
+  line-height: 75px;
+  margin-top: 15px;
+}
+
+#weekend {
+  background-color: #F7F7F7;
+}
+
+#holiday {
+  background-color: #a0e7ff;
+}
+
+#leave {
+  background-color: pink;
+}
+
+.content {
+  height: 50px;
+  width: 150px;
+  margin-left: 20px;
+  line-height: 75px;
+}
+
+.drop select {
+  background: white;
+  border: 2px solid white;
+  text-align-last: center;
+  font-size: 15px;
+}
+
+.select {
+  width: 250px;
+  height: 30px;
+  margin-left: 212.5px;
+  margin-top: 22.5px;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.day-label {
+  text-align: center;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.date {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 40px;
+}
+
+.date.today {
+  border: 2px solid #007bff;
+  background-color: #e6f0ff;
+}
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.month-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.month-nav button {
+  padding: 4px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.date.weekend {
+  background-color: #f0f0f0; /* light grey */
+}
+.date.holiday {
+  background-color: #ffe8cc; /* light orange */
+  font-weight: bold;
+}
+
+.holiday-list {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fdf7e3;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.holiday-list ul {
+  padding-left: 1rem;
+}
+
+.holiday-list li {
+  margin-bottom: 5px;
+}
+
+.holiday-label {
+  font-size: 0.7rem;
+  color: #d00;
+  margin-top: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.year-select {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
